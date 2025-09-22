@@ -1,14 +1,15 @@
 
+
 import React, { useState, useCallback } from 'react';
-import type { FormState, PromptOutput, VideoOnlyFormState, VideoOnlyPromptOutput } from './types';
-import { generateStyledPrompt, generateVideoOnlyPrompt } from './services/geminiService';
-import InputForm from './components/InputForm';
-import OutputDisplay from './components/OutputDisplay';
-import Header from './components/Header';
-import Loader from './components/Loader';
-import ErrorMessage from './components/ErrorMessage';
-import VideoOnlyInputForm from './components/VideoOnlyInputForm';
-import VideoOnlyOutputDisplay from './components/VideoOnlyOutputDisplay';
+import type { FormState, PromptOutput, VideoOnlyFormState, VideoOnlyPromptOutput } from './types.ts';
+import { generateStyledPrompt, generateVideoOnlyPrompt } from './services/geminiService.ts';
+import InputForm from './components/InputForm.tsx';
+import OutputDisplay from './components/OutputDisplay.tsx';
+import Header from './components/Header.tsx';
+import Loader from './components/Loader.tsx';
+import ErrorMessage from './components/ErrorMessage.tsx';
+import VideoOnlyInputForm from './components/VideoOnlyInputForm.tsx';
+import VideoOnlyOutputDisplay from './components/VideoOnlyOutputDisplay.tsx';
 
 const App: React.FC = () => {
   // State for the main Photo + Video workflow
