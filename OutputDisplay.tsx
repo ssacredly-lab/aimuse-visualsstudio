@@ -1,7 +1,7 @@
 import React from 'react';
-import type { PromptOutput } from '../types';
-import PromptCard from './PromptCard';
-import SectionHeader from './SectionHeader';
+import type { PromptOutput } from '../types.ts';
+import PromptCard from './PromptCard.tsx';
+import SectionHeader from './SectionHeader.tsx';
 
 interface OutputDisplayProps {
   output: PromptOutput;
