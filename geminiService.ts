@@ -1,4 +1,4 @@
-import type { FormState, PromptOutput, VideoOnlyFormState, VideoOnlyPromptOutput } from '../types';
+import type { FormState, PromptOutput, VideoOnlyFormState, VideoOnlyPromptOutput } from '../types.ts';
 
 // The main generation logic is now on the server. This function calls our secure endpoint.
 export const generateStyledPrompt = async (inputs: FormState): Promise<PromptOutput> => {
