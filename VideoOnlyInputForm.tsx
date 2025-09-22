@@ -1,8 +1,8 @@
 
 
 import React from 'react';
-import type { VideoOnlyFormState, OutfitImage } from '../types';
-import SectionHeader from './SectionHeader';
+import type { VideoOnlyFormState, OutfitImage } from '../types.ts';
+import SectionHeader from './SectionHeader.tsx';
 
 interface VideoOnlyInputFormProps {
   formState: VideoOnlyFormState;
