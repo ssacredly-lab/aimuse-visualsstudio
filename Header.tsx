@@ -1,6 +1,6 @@
 import React from 'react';
 // Fix: Changed import to use the SVG LogoIcon component to resolve the module error.
-import Logo from './icons/LogoIcon';
+import Logo from './icons/LogoIcon.tsx';
 
 const Header: React.FC = () => {
   return (
