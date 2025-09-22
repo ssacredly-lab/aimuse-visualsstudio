@@ -2,8 +2,8 @@
 // It securely handles the Gemini API calls.
 
 import { GoogleGenAI, Type } from "@google/genai";
-import type { FormState, PromptOutput, VideoOnlyFormState, VideoOnlyPromptOutput } from '../types';
-import { chooseOutfit, cleanVibe, sceneFromVibe, _is_runway_mode, _runway_scene_phrase, _runway_scene_block, _runway_lighting, _RUNWAY_SHOTS, _sanitize_runway, applyGeneralPassthrough, applyCinematicVariation, applyEditorialOutfits, applyOldMoneyVariation, applyCleanGirlVariation, applyHyperrealBeautyVariation, applyPinterestLifestyleVariation, applySurrealLuxuryVariation, applyStreetStyleVariation } from "../services/promptUtils";
+import type { FormState, PromptOutput, VideoOnlyFormState, VideoOnlyPromptOutput } from '../types.ts';
+import { chooseOutfit, cleanVibe, sceneFromVibe, _is_runway_mode, _runway_scene_phrase, _runway_scene_block, _runway_lighting, _RUNWAY_SHOTS, _sanitize_runway, applyGeneralPassthrough, applyCinematicVariation, applyEditorialOutfits, applyOldMoneyVariation, applyCleanGirlVariation, applyHyperrealBeautyVariation, applyPinterestLifestyleVariation, applySurrealLuxuryVariation, applyStreetStyleVariation } from "../services/promptUtils.ts";
 
 // --- IMPORTANT ---
 // This function relies on an Environment Variable named `API_KEY` being set in your Vercel project settings.
