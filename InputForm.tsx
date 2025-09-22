@@ -1,8 +1,8 @@
 
 
 import React from 'react';
-import type { FormState, OutfitImage } from '../types';
-import SectionHeader from './SectionHeader';
+import type { FormState, OutfitImage } from '../types.ts';
+import SectionHeader from './SectionHeader.tsx';
 
 interface InputFormProps {
   formState: FormState;
