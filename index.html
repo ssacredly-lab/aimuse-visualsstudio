@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AiMUSE Visuals Alchemy Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              aimuse: {
+                // v4 - Logo-derived "Atelier" Palette
+                'pink-bg': '#EBCFD4',
+                'cream': '#F7F1ED',
+                'blue': '#B7D0E5',
+                'blue-dark': '#A0B9D1',
+                'beige': '#EADBC9',
+                'gold': '#C9A97F',
+                'pearl': '#FCF6F8', // Lighter variant for cards
+                'ink': '#5D494F',   // Dark, warm text color
+                'text': '#6B5B68',
+                'muted': '#A89BA6',
+                'stroke': '#E5D8DB', // Soft borders
+                'shadow': 'rgba(110, 80, 88, 0.07)', // Warm shadow color
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            borderRadius: {
+              'card': '26px',
+              'form': '12px',
+              'output': '14px',
+              'aimuse': '18px',
+              'btn': '14px',
+            },
+             boxShadow: {
+              // Soft, warm shadow matching the logo's depth
+              'atelier': '0 4px 12px rgba(110, 80, 88, 0.05), 0 12px 32px rgba(110, 80, 88, 0.08)',
+               // Pastel Blue button effect
+              'atelier-btn': '0 1px 2px rgba(183, 208, 229, 0.2), 0 6px 12px rgba(183, 208, 229, 0.2), inset 0 1px 1px #fff6',
+               // Softer inset for inputs
+              'atelier-inset': 'inset 0 2px 4px rgba(110, 80, 88, 0.04)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0"
+  }
+}
+</script>
+<style>
+  body{
+    background-color: #EBCFD4;
+  }
+  /* Subtle paper/plaster texture for a high-end, tactile feel */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXVpaWl9fX15eXl2dnZcXFxSUlJsbGxycnJvb29FRUVNTU1QUFBSUlJwcHCEhIQgICAQEBAcHByNjY0bW9+oAAAAgklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXEzOB/zoqKebookVGS1RUcpa4fSSMAfNj6cVAJpGkEGxpBGyZ41iuDRN4X4aQeZGGN0P2GUVWCFsGCverOPuN4ClZgB+BdPcnJO2Vf60sBHi36cU3gojFjV9f25duCoGu9dcAnwIJuA24GogAAAAASUVORK5CYII=');
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: -1;
+  }
+  /* Custom select arrow styling */
+  .custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236B5B68' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem; /* Add space for the arrow */
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-aimuse-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "AiMUSE Visuals Alchemy Studio",
+  "description": "An intelligent prompt engineer that transforms simple vibes into production-ready, detailed prompts for various AI image generation tools. Includes camera settings, lighting, composition, negative prompts, and tool-specific variants.",
+  "requestFramePermissions": []
+}
